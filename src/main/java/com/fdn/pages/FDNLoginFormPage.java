@@ -12,6 +12,7 @@ public class FDNLoginFormPage {
     @FindBy(id = "id-email-username") WebElement field_Username;
     @FindBy(id = "id-password") WebElement field_Password;
     @FindBy(xpath = "//input[@value='Login']") WebElement button_Login;
+    @FindBy(xpath = "//input[@value='Create Account']") WebElement button_CreateAccount;
 
     WebDriver driver;
 
@@ -31,6 +32,10 @@ public class FDNLoginFormPage {
 
     public void click_LoginButton(){
         button_Login.click();
+    }
+
+    public void click_CreateAccountButton(){
+        button_CreateAccount.click();
     }
 
 }
